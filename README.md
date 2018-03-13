@@ -6,14 +6,15 @@
 <p><span style="text-decoration: underline;"><strong>what is do ?</strong></span><br />he take the list that contains the url\device what you need<br />and read every line until the end of the file</p>
 <p>&nbsp;</p>
 <p><strong>on this part</strong></p>
-<p>:part1<br />echo %1<br />TASKLIST | find /c "cmd" &gt;count.txt<br />set /p ch=&lt;count.txt<br />set str1=%ch%<br />set /A >
+<p>:part1<br />echo %1<br />TASKLIST | find /c "cmd" &gt;count.txt<br />set /p ch=&lt;count.txt<br />set str1=%ch%<br />set /A &gt;</p>
 <p>echo done</p>
 <p>last part is the "finish" to send the loop after reach to end of file.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>you have full demo "POC"with ping you can download and play</p>
 <p><strong>and one note</strong></p>
-<p><span id="result_box" class="" lang="en"><span class="">I know English here is not perfect.</span> <span class="">But I'm dyslexic and it's part of my unique thinking :)</span></span></p>fh=%str1%-1<br />IF %fh% GEQ 10 goto :wait<br /><br /></p>
+<p><span id="result_box" class="" lang="en"><span class="">I know English here is not perfect.</span> <span class="">But I'm dyslexic and it's part of my unique thinking :)</span></span></p>
+<p>fh=%str1%-1<br />IF %fh% GEQ 10 goto :wait<br /><br /></p>
 <p>if he see have 10 cmd running he will go to "wait" and three i have sleep for 2 sec and check again<br />if not again he go to sleep 2 sec until i go down from 10 cmd if 1 will close the script will adding 1 more to keep all time 10 cmd runnig</p>
 <p>START /B CMD /C CALL "demo.bat" %1 &gt;NUL 2&gt;&amp;1<br />goto :eof</p>
 <p>this line send the "demo.bat " to the background and keep&nbsp; do it until end of the file</p>
@@ -27,4 +28,3 @@
 <p>you have full demo "POC"with ping you can download and play</p>
 <p><strong>and one note</strong></p>
 <p><span id="result_box" class="" lang="en"><span class="">I know English here is not perfect.</span> <span class="">But I'm dyslexic and it's part of my unique thinking :)</span></span></p>
-
