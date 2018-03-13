@@ -12,3 +12,6 @@
 <p>this line send the "demo.bat " to the background and keep&nbsp; do it until end of the file</p>
 <p>&nbsp;:wait<br />timeout /T 2<br />goto :part2</p>
 <p>block to send the script if you have 10 cmd running and back again to loop</p>
+<p>:fin</p>
+<p>echo done</p>
+<p>last part is the "finish" to send the loop after reach to end of file</p>
