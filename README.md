@@ -5,3 +5,11 @@
 <p>after you save your first cmd script lets give it a name "demo.bat" and now we cerate the "main" cmd part<br />for this you need first all write "while read \ for i " <br />for example :<br />for /f "tokens=1 delims=" %%i in (list.txt) do call :part1 %%i<br />goto :fin</p>
 <p><span style="text-decoration: underline;"><strong>what is do ?</strong></span><br />he take the list that contains the url\device what you need<br />and read every line until the end of the file</p>
 <p>&nbsp;</p>
+<p>on this part</p>
+<p>:part1<br />echo %1<br />TASKLIST | find /c "cmd" &gt;count.txt<br />set /p ch=&lt;count.txt<br />set str1=%ch%<br />set /A fh=%str1%-1<br />IF %fh% GEQ 10 goto :wait<br /><br /></p>
+<p>if he see have 10 cmd running he will go to "wait" and three i have sleep for 2 sec and check again<br />if not again he go to sleep 2 sec until i go down from 10 cmd if 1 will close the script will adding 1 more to keep all time 10 cmd runnig</p>
+<p>START /B CMD /C CALL "demo.bat" %1 &gt;NUL 2&gt;&amp;1<br />goto :eof</p>
+<p>this line send the "demo.bat " to the background and keep&nbsp; do it until end of the file</p>
+<p>&nbsp;</p>
+<p>:wait<br />timeout /T 2<br />goto :part2</p>
+<p>block to send the script if you have 10 cmd running and back again to loop</p>
