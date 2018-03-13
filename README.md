@@ -10,6 +10,5 @@
 <p>if he see have 10 cmd running he will go to "wait" and three i have sleep for 2 sec and check again<br />if not again he go to sleep 2 sec until i go down from 10 cmd if 1 will close the script will adding 1 more to keep all time 10 cmd runnig</p>
 <p>START /B CMD /C CALL "demo.bat" %1 &gt;NUL 2&gt;&amp;1<br />goto :eof</p>
 <p>this line send the "demo.bat " to the background and keep&nbsp; do it until end of the file</p>
-<p>&nbsp;</p>
-<p>:wait<br />timeout /T 2<br />goto :part2</p>
+<p>&nbsp;:wait<br />timeout /T 2<br />goto :part2</p>
 <p>block to send the script if you have 10 cmd running and back again to loop</p>
