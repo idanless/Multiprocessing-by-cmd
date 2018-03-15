@@ -17,5 +17,10 @@
 <p>echo done</p>
 <p>last part is the "finish" to send the loop after reach to end of file.</p>
 <p>&nbsp;you have full demo "POC"with ping you can download and play</p>
+
+
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>summary:</strong></span><br />in the bottom line instead to do one by one "http POST" and wait until the request finish (and go to the 2\3\4\5\ ...line) i send 10 requests in the same time and keep send it until i finish the file .<br />for example<br />if i was need send 100 http and lets say every request take 5 sec to finish (consider timeout) he will take long time <br />in my way like "multi threads" i send 10 http in the same time and if one of the 10 have timeout or take long time the others will runnnig and will finish (than i will adding more acording to the slot to keep 10 http request until end of the file )</p>
+<p>&nbsp;</p>
 <p><strong>and one note</strong></p>
 <p><span id="result_box" class="" lang="en"><span class="">I know English here is not perfect.</span> <span class="">But I'm dyslexic and it's part of my unique thinking :)</span></span></p>
